@@ -1,0 +1,71 @@
+
+<set> 容器使用
+头文件
+#include <set>
+标准库
+std::set;
+定义一个set容器
+set<int> sets;
+正常定义的容器自定义是从小到大
+如果想重大到小的进行插入元素
+set<int, greater<int> > coll;
+set容器不允许有重复元素
+	插入元素
+	sets.insert(1);
+	
+<mutiset> 无序容器
+头文件
+#include <unordered_set>
+标准库
+std::unordered_mutiset;
+定义一个mutiset
+	unordered_mutiset<int> coll;
+	coll.insert({1, 2, 3 ,4, 5, 5, 3}); C++11 允许这么插入
+	
+	
+<vector> <deque> <list> <forward_list>  扩容操作
+	vector<int> coll;
+	coll.resize(size);
+
+移除元素
+	list<int> coll;
+	list<int>::iterator end = remove(coll.begin(), coll.end(), 3);
+	end 返回的移除动作后的新的逻辑终点
+	distance 获取删除元素的数量
+	distance(end, coll.end());
+	把需要删除的元素斩草除根 erase
+	coll.erase(end, coll.end())
+	
+对于高效的开发，尽量使用成员函数(STL)
+
+	for_each()函数针对区间每一个元素，调用一个由用户制定的函数
+	void print(int p) {
+		cout << p << endl;
+	}
+	for_each(coll.begin(), coll.end(), print);
+	
+函数对象比正常函数效率要高
+	通过重载操作符() 去完成函数对象
+	这么写的好处是，一个函数可以处理多种状态
+	class AddValue {
+	private: 
+		int value;
+	public:
+		AddValue(int v) : value(v) {}
+		
+		void operator() (int& elem) const {
+			elem += this->value;
+		}
+	
+	}
+	`每个元素加上10`
+	for_each(coll.begin(), coll.end(), AddValue(10))
+	
+	
+transform 算法
+给定运算规则，将两个容器内的元素处理后的结果写入第三个容器中	
+
+lambda表达式 是一种隐式的预定义函数对象和函数对象一样快
+
+
+	
