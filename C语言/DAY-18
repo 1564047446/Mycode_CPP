@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+#define TEST(a, b)    \   
+	int test##a##_##b()   \           //换成VIOD
+	int p##a##_##b = kong(test##a##_##b, #a, #b); \
+	int testa##_##b();   \    //换成void
+	
+int kong(void (*func)(), const char *s1, const char *s2) {
+	func();
+	return 0;
+}
+
+
+
+
+TEST(A, B) {
+	printf();
+	return 0;
+}
+
+TEST(C, D) {
+	printf();
+}
+
+int num = TESTAB();
+
+
+int main() {
+	TESTAB();
+	TESTCD();
+			
+	return 0;
+}
+
+
+作业  加个中间层
+
+自己写程序 自己写测试样例
+
+
+实现  EXPECT 宏定义
+输出测试组数
+
+//test33.cpp

@@ -1,0 +1,133 @@
+ problem 15:
+
+
+//组合问题
+
+
+int64_t ans = 1, m = 20;
+for(int64_t i = 40; i >= 21; i--)
+{
+	ans *= i;
+	while(m && ans % m == 0)
+	{
+		ans /= m;
+		m--;
+	}
+}
+
+
+任何一种满足结合律的运算都可以使用到快速幂；
+
+
+0 1 2
+3 4 5    ->
+6 7 8
+
+
+A[I][K] * A[K][J]   从I点出发经过K步可以走到J点  
+
+
+
+void output(int matr[][9])
+
+{
+	char clo_style[] = "%4d";
+	char num_style[] = "%4d";
+	printf("\n    |");
+	int ret = 5;
+	for(int i = 0; i < 9; i++)
+	{
+		ret += printf("%4d", i);
+	}
+	printf("\n");
+	for(int i = 0; i < 9; i++)
+	{
+		printf(col_style, i);
+		for(itn j = 0; j < 9; j++)
+		{
+			printf(num_style, matr[i][j]);
+		}
+		printf("|\n");
+	}
+	return;
+	
+}
+
+
+int main()
+
+{
+
+	int matr[9][9] = {0};
+	for(int i = 0; i < 9; i++)
+	{
+		for(int j = i + 1; j < 9; j++)
+		{
+			if(j - i == 1 && j % 3 == 0)
+			continue;
+			if(j - i != 1 && j - i != 3)
+			continue;
+			mati[i][j] = 1;
+			matr[j][i] = 1; 
+		}
+	
+	}
+}
+
+
+
+problem 18:
+
+动态规划基础
+
+// 运筹学
+
+动态规划 是 递推的一个子集
+
+动态规划是求最优解
+
+//   步骤    动guifangcheng   状态转移方程
+1.   F(I, J);  ->   max(F[I - 1][J] + NUM, F[I - 1][J - 1] + NUM)  阶段划分
+(1) 从顶 到 I，J点获取到的最大值
+(2) 从  I， J 到底端的最大值
+
+
+f[0][0] = num[0][0];
+for(int i = 1; i < max; i++)
+{
+	for(int j = 0; j <= i; j++)
+	f[i][j] = f[i - 1][j] + num[i][j];
+	if(j == 0|| f[i - 1][j - 1] <= f[i][j]) continue;
+	f[i][j] = f[i - 1][j - 1] + num[i][j];
+}
+
+int ans = 0;
+for(int i = 1; i < max; i++)
+{
+	if(f[max - 1][i] > ans)
+	ans = f[max - 1][i];
+
+}
+
+
+
+
+problem 24:
+
+康拓展开
+
+
+
+1.线性晒
+2.大整数乘法
+3.因子和
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+for(初始化； 循环条件； 执行后操作)
+{
+	代码块； //  符合语句	
+}
+
+
+int main() // 特殊的主函数
+
+
+递归程序的组成部分
+1、边界条件处理
+2、针对问题的处理过程和递归过程
+3、结果返回
+
+头递归和尾递归为啥返回值不一样；
+
+/*指针函数*/内存不仅可以存放数据还可以存放  /*代码段*/ -> 也是一种数据 
+int (*)(int) //函数指针类型
+int (*a)(int)  //函数指针类型的变量
+
+/*变参函数*/
+#include<stdarg.h>
+int max_int(int a, ...)
+
+va_list 获得a往后的参数列表
+va_start 定位a后面第一个参数的位置
+va_arg 获取下一个可变参数列表中的参数
+va_end结束整个获取可变参数列表的动作
+
+/*实现*/  //test44.cpp//
+
+int max_int(int num, ...)
+{
+	va_list arg;
+	va_start(arg, num);
+	int ans = 0;
+	while(num--)
+	{
+		int t = va_arg(arg, int);
+		if(t > ans)
+			ans = t;
+	}
+	va_end(arg);
+	return ans;
+}
+
+
+#define haizei_arg(pp, T)({ \
+	char * temp1 = (char *)(pp); \
+	T *temp2 = (T *)(pp); \
+	temp1 += sizeof(T); \
+	pp = temp1; \
+	*temp; \  /*返回值*/
+})
+
+int main()
+{
+	char buffer[100];
+	for(int i = 0; i < 100; i++)
+	{
+		buffer[i] = i % 16;
+	}
+	double *p1 = (double *)(buffer + 4);
+	*p1 = 123.456;
+	double *p = (double *)buffer;
+	int a = haizei_arg(p, int);
+	printf("%d %d %p\n", a, a, p);
+	double b = haizei_arg(p, double);
+	printf("%lf %p\n", b, p);
+	return 0;
+}
+
+

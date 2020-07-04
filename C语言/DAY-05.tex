@@ -1,0 +1,89 @@
+
+
+problem 45:
+
+// 函数指针    int qqq(int x, int(*func)(int))
+
+
+
+problem 09:
+
+1. 他们的整数倍也是勾股数，(na, nb, nc)也是勾股数
+2. (a, b, c)之间两两互质
+3.  a, b 必为一个奇数一个偶数
+4. 任何素勾股数均可表示为如下星星， 其中n < m， 切/*gcd(n, m) = 1;*/
+    a = 2 * n * m;
+    b = m ^ 2 - n ^ 2;
+    c = m ^ 2 + n ^ 2;
+
+
+
+// 素勾股数
+
+
+
+problem 12:
+
+//任意非素数的整数等于 n个素数的x幂的乘积的形式   比如: 18 = 2 ^ 1 * 3 ^ 2;
+
+// A与B为互质的数 C = A * B;   因子个数应该等于 (Pa) * (pb);
+
+
+for(int i = ; i * i <= x; i++)
+{
+
+	if(x % i == 0)
+	continue;
+	int times = 0;
+	while(x % i == 0)
+	{
+		x /= i;
+		times++;
+		
+	}
+	num *= times;
+}
+	if(x != 1)
+	num *= 2;
+	
+	//  利用素数筛框架 达成时间复杂度为O(1)
+	
+int min_num[];  //最小素因子的幂数
+int num[];    //因数的个数
+int prime[];   //素数表
+
+
+for(int i = 2; i <= max_range; i++)
+{
+	if(!prime[i])
+	{
+		prime[ ++prime[0]] = i;
+		min_num[i] = 1;
+		num[i] = 2;
+	}
+	for(int j = 1; j <= prime[0]; j++)
+	{
+		if(i * p[j] > max_range)
+		break;
+		if(i % p[j] != 0)
+		{
+			num[prime[j] * i] = num[prime[j]] * num[i];
+			min_num[prime[j] * i] = 1;
+		}
+		else
+		
+		{
+			num[prime[j] * i] = num[i] / (min_num[i] + 1) * (min_num[i] + 2);
+			min_num[prime[j] * i] = min_num[i] + 1;
+			break;
+			
+		}
+	}
+}
+
+
+problem 21:
+
+
+
+

@@ -1,0 +1,27 @@
+
+		/*test26.cpp*/
+
+		结构体的内存对齐
+		定义变量类型顺序不一样  所占空间大小不一样
+		
+		ip.num = n - 1;
+		printf("%d.%d.%d.%d\n", ip.num.1, ip.num.2, ip.num.3, ip.num.4);
+		
+		宏定义仅仅定义了一个变量， typedef却定义了一个新的类型
+		typedef struct __node {
+			int x, y;
+		} Node, *PNode;
+		Pnode 是新类型   struct __node 和 Node 是一个等价的
+		typedef int (*func)(int);
+		
+		int fa(), int fb();
+		func a, b;
+		a(3) == fa(3);
+		
+		int main(int argc, char *argv[])
+		int main(int argc, char *argv[], char **env);
+		
+		
+		int main(int argc, char *argv[]) {
+			
+		}

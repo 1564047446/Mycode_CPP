@@ -1,0 +1,38 @@
+double cal(const char *str, int l, int r) {
+
+	int min_pos = -1, priority = INF, temp_priority = 0;
+	for(int i = l; i < r; i++) {
+		int cur_priority = INF  + 1;
+		switch (str[i]) {
+			case '(': temp_priory += 100; break;
+			case ')': temp_priory -= 100; break;
+			case '+':
+			case '-': cur_priority = temp_priority + 1; break;
+			case '*': 
+			case '/': cur_priority = temp_priority + 2; break;
+			
+		}
+		if(cur_priority <= priority) {
+			min_pos = i;
+			priority = cur_priority;
+		}
+	
+	}
+	
+	if(min_pos == -1) {
+		double num = 0;
+		while(str[l] == ' ' || str[l] == '(') l++;
+		sscanf(str + l, "%lf", &num);
+		return num;
+	} else {
+		double a = cal(str, l, min_pos);
+		double b = cal(str, min_pos + 1, r);
+		switch(str[min_pos]) {
+			case '+': return a + b;
+			case '-': return a - b;
+			case '*': return a * b;
+			case '/': return a / b;
+		}
+	}
+	return 0;
+}

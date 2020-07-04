@@ -1,0 +1,468 @@
+adduser.conf
+apg.conf
+appstream.conf
+brltty.conf
+ca-certificates.conf
+debconf.conf
+deluser.conf
+fuse.conf
+fwupd.conf
+gai.conf
+hdparm.conf
+host.conf
+insserv.conf
+kernel-img.conf
+kerneloops.conf
+ld.so.conf
+libao.conf
+libaudit.conf
+logrotate.conf
+ltrace.conf
+mke2fs.conf
+mtools.conf
+nsswitch.conf
+pam.conf
+pnm2ppa.conf
+popularity-contest.conf
+resolv.conf
+rsyslog.conf
+sensors3.conf
+signond.conf
+sysctl.conf
+ucf.conf
+updatedb.conf
+usb_modeswitch.conf
+_llseek (2)          - reposition read/write file offset
+aconnect (1)         - ALSA sequencer connection manager
+add-shell (8)        - add shells to the list of valid login shells
+afs_syscall (2)      - unimplemented system calls
+alsabat (1)          - command-line sound tester for ALSA sound card driver
+alsactl (1)          - advanced controls for ALSA soundcard driver
+alsactl_init (7)     - alsa control management - initialization
+alsaloop (1)         - command-line PCM loopback
+alsamixer (1)        - soundcard mixer for ALSA soundcard driver, with ncurse...
+amidi (1)            - read from and write to ALSA RawMIDI ports
+amixer (1)           - command-line mixer for ALSA soundcard driver
+aplay (1)            - command-line sound recorder and player for ALSA soundc...
+arecord (1)          - command-line sound recorder and player for ALSA soundc...
+aseqdump (1)         - show the events received at an ALSA sequencer port
+aseqnet (1)          - ALSA sequencer connectors over network
+assert (3)           - abort the program if assertion is false
+auth_destroy (3)     - library routines for remote procedure calls
+authnone_create (3)  - library routines for remote procedure calls
+authunix_create (3)  - library routines for remote procedure calls
+authunix_create_default (3) - library routines for remote procedure calls
+autoinst (1)         - wrapper around the LCDF TypeTools, for installing Open...
+backtrace_symbols (3) - support for application self-debugging
+backtrace_symbols_fd (3) - support for application self-debugging
+blockdev (8)         - call block device ioctls from the command line
+break (2)            - unimplemented system calls
+c++filt (1)          - Demangle C++ and Java symbols.
+callrpc (3)          - library routines for remote procedure calls
+clnt_broadcast (3)   - library routines for remote procedure calls
+clnt_call (3)        - library routines for remote procedure calls
+clnt_control (3)     - library routines for remote procedure calls
+clnt_create (3)      - library routines for remote procedure calls
+clnt_destroy (3)     - library routines for remote procedure calls
+clnt_freeres (3)     - library routines for remote procedure calls
+clnt_geterr (3)      - library routines for remote procedure calls
+clnt_pcreateerror (3) - library routines for remote procedure calls
+clnt_perrno (3)      - library routines for remote procedure calls
+clnt_perror (3)      - library routines for remote procedure calls
+clnt_spcreateerror (3) - library routines for remote procedure calls
+clnt_sperrno (3)     - library routines for remote procedure calls
+clnt_sperror (3)     - library routines for remote procedure calls
+clntraw_create (3)   - library routines for remote procedure calls
+clnttcp_create (3)   - library routines for remote procedure calls
+clntudp_bufcreate (3) - library routines for remote procedure calls
+clntudp_create (3)   - library routines for remote procedure calls
+console_ioctl (4)    - ioctls for console terminal and virtual consoles
+credentials (7)      - process identifiers
+deb-symbols (5)      - Debian's extended shared library information file
+default.pa (5)       - PulseAudio Sound Server Startup Script
+dircolors (1)        - color setup for ls
+dlsym (3)            - obtain address of a symbol in a shared object or execu...
+dpkg-gensymbols (1)  - generate symbols files (shared library dependency info...
+enchant-lsmod (1)    - Show information about available spell-checking module...
+endusershell (3)     - get permitted user shells
+evince-thumbnailer (1) - create png thumbnails from PostScript and PDF documents
+false (1)            - do nothing, unsuccessfully
+fattach (2)          - unimplemented system calls
+fdetach (2)          - unimplemented system calls
+fixdlsrps (1)        - filter to fix DviLaser/PS documents to work with PSUtils
+fixfmps (1)          - filter to fix Framemaker documents so PSUtils work
+fixpsditps (1)       - filter to fix Transcript psdit documents so PSUtils work
+fixpspps (1)         - filter to fix PSPrint PostScript so PSUtils work
+fixscribeps (1)      - filter to fix Scribe documents so PSUtils work
+fixtpps (1)          - filter to fix Tpscript documents to work with PSUtils
+fixwfwps (1)         - filter to fix Word for Windows documents so PSUtils work
+fixwpps (1)          - filter to fix WP documents so PSUtils work
+fixwwps (1)          - filter to fix Windows Write documents so PSUtils work
+get_kernel_syms (2)  - retrieve exported kernel and module symbols
+get_myaddress (3)    - library routines for remote procedure calls
+getmsg (2)           - unimplemented system calls
+getpmsg (2)          - unimplemented system calls
+getusershell (3)     - get permitted user shells
+git-credential (1)   - Retrieve and store user credentials
+git-credential-cache--daemon (1) - Temporarily store user credentials in memory
+git-credential-store (1) - Helper to store credentials on disk
+git-difftool (1)     - Show changes using common diff tools
+git-ls-files (1)     - Show information about files in the index and the work...
+git-ls-remote (1)    - List references in a remote repository
+git-ls-tree (1)      - List the contents of a tree object
+git-mailsplit (1)    - Simple UNIX mbox splitter program
+git-mergetool (1)    - Run merge conflict resolution tools to resolve merge c...
+git-mktree (1)       - Build a tree-object from ls-tree formatted text
+gitcredentials (7)   - providing usernames and passwords to Git
+gnome-open (1)       - Open files and URLs using the GNOME file handlers
+gnome-screensaver-command (1) - controls GNOME screensaver
+grub-menulst2cfg (1) - transform legacy menu.lst into grub.cfg
+gst-install (1)      - installs missing GStreamer plugins
+gtty (2)             - unimplemented system calls
+gvfs-ls (1)          - List files
+hp-levels (1)        - Supply Levels Utility
+initramfs-tools (8)  - an introduction to writing scripts for mkinitramfs
+insserv (8)          - boot sequence organizer using LSB init.d script depend...
+intel_lid (1)        - Polls the values of different reports about laptop lid...
+intro (2)            - introduction to system calls
+IO::Socket::SSL::Utils (3pm) - - loading, storing, creating certificates and ...
+ioctl_list (2)       - list of ioctl calls in Linux/i386 kernel
+ip (8)               - show / manipulate routing, devices, policy routing and...
+ipc (2)              - System V IPC system calls
+IPC::Run::IO (3pm)   - - I/O channels for IPC::Run.
+IPC::Run::Timer (3pm) - - Timer channels for IPC::Run.
+isastream (2)        - unimplemented system calls
+iwpriv (8)           - configure optionals (private) parameters of a wireless...
+latexdiff-cvs (1)    - wrapper script that calls latexdiff for different vers...
+latexdiff-git (1)    - wrapper script that calls latexdiff for different vers...
+latexdiff-hg (1)     - wrapper script that calls latexdiff for different vers...
+latexdiff-rcs (1)    - wrapper script that calls latexdiff for different vers...
+latexdiff-svn (1)    - wrapper script that calls latexdiff for different vers...
+latexdiff-vc (1)     - wrapper script that calls latexdiff for different vers...
+List::MoreUtils (3pm) - Provide the stuff missing in List::Util
+List::MoreUtils::Contributing (3pm) - Gives rough introduction into contribut...
+List::MoreUtils::PP (3pm) - Provide List::MoreUtils pure Perl implementation
+List::MoreUtils::XS (3pm) - Provide compiled List::MoreUtils functions
+llseek (2)           - reposition read/write file offset
+lock (2)             - unimplemented system calls
+logrotate (8)        - rotates, compresses, and mails system logs
+logrotate.conf (5)   - rotates, compresses, and mails system logs
+ls (1)               - list directory contents
+lsattr (1)           - list file attributes on a Linux second extended file s...
+lsb_release (1)      - print distribution-specific information
+lsblk (8)            - list block devices
+lscpu (1)            - display information about the CPU architecture
+lsdiff (1)           - show which files are modified by a patch
+lsearch (3)          - linear search of an array
+lseek (2)            - reposition read/write file offset
+lseek64 (3)          - reposition 64-bit read/write file offset
+lshw (1)             - list hardware
+lsinitramfs (8)      - list content of an initramfs image
+lsipc (1)            - show information on IPC facilities currently employed ...
+lslocks (8)          - list local system locks
+lslogins (1)         - display information about known users in the system
+lsmod (8)            - Show the status of modules in the Linux Kernel
+lsof (8)             - list open files
+lspci (8)            - list all PCI devices
+lspcmcia (8)         - display extended PCMCIA debugging information
+lspgpot (1)          - extracts the ownertrust values from PGP keyrings and l...
+lstat (2)            - get file status
+lstat64 (2)          - get file status
+lsusb (8)            - list USB devices
+luatools (1)         - (未知的主题)
+luit (1)             - Locale and ISO 2022 support for Unicode terminals
+LWP::Protocol (3pm)  - Base class for LWP protocols
+madvise1 (2)         - unimplemented system calls
+man (1)              - an interface to the on-line reference manuals
+mcomp (1)            - Compares two files using mtools
+md5sum.textutils (1) - compute and check MD5 message digest
+mdoc.samples (7)     - tutorial sampler for writing BSD manuals with -mdoc
+mktexlsr (1)         - create ls-R databases
+mpx (2)              - unimplemented system calls
+mtools (1)           - utilities to access DOS disks in Unix.
+mtools (5)           - mtools configuration files
+mtools.conf (5)      - mtools configuration files
+mtoolstest (1)       - tests and displays the configuration
+mtx-tools (1)        - (未知的主题)
+Net::DBus::Error (3pm) - Error details for remote method invocation
+Net::DBus::Exporter (3pm) - Export object methods and signals to the bus
+Net::DBus::Tutorial (3pm) - tutorials on the Perl DBus APIs
+Net::DBus::Tutorial::ExportingObjects (3pm) - tutorials on providing a DBus s...
+Net::DNS::RR::TLSA (3pm) - DNS TLSA resource record
+Net::HTTPS (3pm)     - Low-level HTTP over SSL/TLS connection (client)
+nm (1)               - list symbols from object files
+nstat (8)            - network statistics tools.
+ntfsls (8)           - list directory contents on an NTFS filesystem
+ntfsprogs (8)        - tools for doing neat things with NTFS
+oldlstat (2)         - get file status
+pacat (1)            - Play back or record raw or encoded audio streams on a ...
+pacmd (1)            - Reconfigure a PulseAudio sound server during runtime
+pactl (1)            - Control a running PulseAudio sound server
+padsp (1)            - PulseAudio OSS Wrapper
+pam_exec (8)         - PAM module which calls an external command
+pam_shells (8)       - PAM module to check for valid login shell
+pamon (1)            - Play back or record raw or encoded audio streams on a ...
+pamstretch (1)       - scale up a PNM or PAM image by interpolating between p...
+paplay (1)           - Play back or record raw or encoded audio streams on a ...
+parec (1)            - Play back or record raw or encoded audio streams on a ...
+parecord (1)         - Play back or record raw or encoded audio streams on a ...
+pasuspender (1)      - Temporarily suspend PulseAudio
+pax11publish (1)     - PulseAudio X11 Credential Utility
+pbmclean (1)         - flip isolated pixels in portable bitmap
+phys (2)             - unimplemented system calls
+pkaction (1)         - Get details about a registered action
+pmap_getmaps (3)     - library routines for remote procedure calls
+pmap_getport (3)     - library routines for remote procedure calls
+pmap_rmtcall (3)     - library routines for remote procedure calls
+pmap_set (3)         - library routines for remote procedure calls
+pmap_unset (3)       - library routines for remote procedure calls
+pmxchords (1)        - This script processes pmx files with chord symbols, al...
+pnminterp (1)        - scale up a PNM or PAM image by interpolating between p...
+ppmchange (1)        - change all pixels of one color to another in a portabl...
+ppmspread (1)        - displace a portable pixmap's pixels by a random amount
+prof (2)             - unimplemented system calls
+protocols (5)        - protocols definition file
+pthread_setcancelstate (3) - set cancelability state and type
+pthread_sigmask (3)  - examine and change mask of blocked signals
+pulse-cli-syntax (5) - PulseAudio Command Line Interface Syntax
+pulse-client.conf (5) - PulseAudio client configuration file
+pulse-daemon.conf (5) - PulseAudio daemon configuration file
+pulseaudio (1)       - The PulseAudio Sound System
+putmsg (2)           - unimplemented system calls
+putpmsg (2)          - unimplemented system calls
+registerrpc (3)      - library routines for remote procedure calls
+remove-shell (8)     - remove shells from the list of valid login shells
+rhythmbox-client (1) - controls a running instance of rhythmbox
+rletopnm (1)         - convert a Utah Raster Tools RLE image file into a PNM ...
+rpc (3)              - library routines for remote procedure calls
+rt_sigpending (2)    - examine pending signals
+rt_sigprocmask (2)   - examine and change blocked signals
+rt_sigtimedwait (2)  - synchronously wait for queued signals
+rtacct (8)           - network statistics tools.
+s_client (1ssl)      - SSL/TLS client program
+s_server (1ssl)      - SSL/TLS server program
+s_time (1ssl)        - SSL/TLS performance timing program
+sane-artec_eplus48u (5) - SANE backend for the scanner Artec E+ 48U and re-ba...
+sane-coolscan (5)    - SANE backend for Nikon film-scanners
+sane-coolscan2 (5)   - SANE backend for Nikon Coolscan film scanners
+sane-coolscan3 (5)   - SANE backend for Nikon Coolscan film scanners
+securetty (5)        - file which lists terminals from which root can log in
+security (2)         - unimplemented system calls
+sess_id (1ssl)       - SSL/TLS session handling utility
+setusershell (3)     - get permitted user shells
+shells (5)           - pathnames of valid login shells
+sigdelset (3)        - POSIX signal set operations
+sigfillset (3)       - POSIX signal set operations
+siginterrupt (3)     - allow signals to interrupt system calls
+signal (7)           - overview of signals
+signalfd (2)         - create a file descriptor for accepting signals
+signalfd4 (2)        - create a file descriptor for accepting signals
+sigpause (3)         - atomically release blocked signals and wait for interrupt
+sigpending (2)       - examine pending signals
+sigprocmask (2)      - examine and change blocked signals
+sigrelse (3)         - System V signal API
+sigtimedwait (2)     - synchronously wait for queued signals
+sigwaitinfo (2)      - synchronously wait for queued signals
+socketcall (2)       - socket system calls
+sotruss (1)          - trace shared library calls through PLT
+speaker-test (1)     - command-line speaker test tone generator for ALSA
+start-pulseaudio-x11 (1) - PulseAudio Sound Server X11 Startup Script
+strace (1)           - trace system calls and signals
+strip (1)            - Discard symbols from object files.
+stty (2)             - unimplemented system calls
+svc_destroy (3)      - library routines for remote procedure calls
+svc_freeargs (3)     - library routines for remote procedure calls
+svc_getargs (3)      - library routines for remote procedure calls
+svc_getcaller (3)    - library routines for remote procedure calls
+svc_getreq (3)       - library routines for remote procedure calls
+svc_getreqset (3)    - library routines for remote procedure calls
+svc_register (3)     - library routines for remote procedure calls
+svc_run (3)          - library routines for remote procedure calls
+svc_sendreply (3)    - library routines for remote procedure calls
+svc_unregister (3)   - library routines for remote procedure calls
+svcerr_auth (3)      - library routines for remote procedure calls
+svcerr_decode (3)    - library routines for remote procedure calls
+svcerr_noproc (3)    - library routines for remote procedure calls
+svcerr_noprog (3)    - library routines for remote procedure calls
+svcerr_progvers (3)  - library routines for remote procedure calls
+svcerr_systemerr (3) - library routines for remote procedure calls
+svcerr_weakauth (3)  - library routines for remote procedure calls
+svcfd_create (3)     - library routines for remote procedure calls
+svcraw_create (3)    - library routines for remote procedure calls
+svctcp_create (3)    - library routines for remote procedure calls
+svcudp_bufcreate (3) - library routines for remote procedure calls
+svcudp_create (3)    - library routines for remote procedure calls
+syscalls (2)         - Linux system calls
+systemd-cgls (1)     - Recursively show control group contents
+tc-cbq-details (8)   - Class Based Queueing
+tclsh (1)            - Simple shell containing Tcl interpreter
+tclsh8.6 (1)         - Simple shell containing Tcl interpreter
+texhash (1)          - create ls-R databases
+textdomain (3)       - set domain for future gettext() calls
+tpic2pdftex (1)      - convert tpic \specials for use by pdftex
+traceroute6.iputils (8) - traces path to a network host
+tty_ioctl (4)        - ioctls for terminals and serial lines
+tuxcall (2)          - unimplemented system calls
+unimplemented (2)    - unimplemented system calls
+usb-devices (1)      - print USB device details
+usleep (3)           - suspend execution for microsecond intervals
+variables (5)        - Format of specifying variable names to SNMP tools.
+vserver (2)          - unimplemented system calls
+watch (1)            - execute a program periodically, showing output fullscreen
+wireless (7)         - Wireless Tools and Wireless Extensions
+x86_64-linux-gnu-c++filt (1) - Demangle C++ and Java symbols.
+x86_64-linux-gnu-nm (1) - list symbols from object files
+x86_64-linux-gnu-strip (1) - Discard symbols from object files.
+xdr_accepted_reply (3) - library routines for remote procedure calls
+xdr_authunix_parms (3) - library routines for remote procedure calls
+xdr_callhdr (3)      - library routines for remote procedure calls
+xdr_callmsg (3)      - library routines for remote procedure calls
+xdr_opaque_auth (3)  - library routines for remote procedure calls
+xdr_pmap (3)         - library routines for remote procedure calls
+xdr_pmaplist (3)     - library routines for remote procedure calls
+xdr_rejected_reply (3) - library routines for remote procedure calls
+xdr_replymsg (3)     - library routines for remote procedure calls
+xlsatoms (1)         - list interned atoms defined on server
+xlsclients (1)       - list client applications running on a display
+xlsfonts (1)         - server font list displayer for X
+XML::LibXML::Boolean (3pm) - Boolean true/false values
+XML::LibXML::ErrNo (3pm) - Structured Errors This module is based on xmlerror...
+XML::XPathEngine::Boolean (3pm) - Boolean true/false values
+xprt_register (3)    - library routines for remote procedure calls
+
+
+
+
+
+
+
+
+
+
+
+
+xprt_unregister (3)  - library routines for remote procedure calls
+zipdetails (1)       - display the internal structure of zip files
+a
+a1
+a1.cpp
+aa
+aa1.cpp
+abcd
+a.log
+a.out
+a.php
+a.pub
+a.sh
+bignum2.cpp
+bignum.cpp
+ccf1.cpp
+ccf2.cpp
+CFS1.cpp
+contestA.cpp
+contestB.cpp
+contestD.cpp
+d1
+DAY-03.log
+DAY-04.log
+DAY-05.log
+DAY-06.log
+DAY-08.log
+DAY-09.log
+dd
+dfs1.cpp
+dfs.cpp
+examples.desktop
+fd
+HTML
+input
+jav.java
+jisuanke-23.cpp
+jisuanke26-2.cpp
+jisuanke-26.cpp
+kmp1.cpp
+kmp2.cpp
+kmp3.cpp
+KMP通用.cpp
+lianxi.cpp
+login
+loin2
+luogu.cpp
+output
+p114-1.cpp
+p115-10.cpp
+p115-12.cpp
+p116-14.cpp
+p116-20.cpp
+p125.cpp
+p130.cpp
+problem08.cpp
+problem09.cpp
+problem12ex1.cpp
+problem12ex2.cpp
+problem12ex3.cpp
+problem13.cpp
+problem15.cpp
+problem16.cpp
+problem17.cpp
+problem18.cpp
+problem18ex1.cpp
+problem20.cpp
+problem21.cpp
+problem21ex1.cpp
+problem21ex2.c
+problem21ex.cpp
+problem24.cpp
+problem25(1).cpp
+problem25.cpp
+problem31.cpp
+problem32.cpp
+problem32ex.cpp
+problem33.cpp
+problem35.cpp
+problem37.cpp
+problem38.cpp
+problem44.cpp
+problem45.cpp
+problem45ex.cpp
+qaq.html
+q.cpp
+qq.cpp
+ss.h
+stringq.h
+test10.cpp
+test11.cpp
+test12.cpp
+test13.cpp
+test14.cpp
+test16.cpp
+test17.cpp
+test1.cpp
+test20.cpp
+test21.cpp
+test2.cpp
+test2.sh
+test3.cpp
+test4.cpp
+test5.cpp
+test6.cpp
+test7.cpp
+test8.cpp
+test9.cpp
+test.c
+test.sh
+方向数组.cpp
+公共的
+滑动窗口2.cpp
+滑动窗口.cpp
+记忆化搜索.cpp
+模板
+视频
+图片
+文档
+下载
+线性筛.cpp
+学习笔记
+音乐
+源码
+桌面

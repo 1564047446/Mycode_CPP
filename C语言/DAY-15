@@ -1,0 +1,111 @@
+  //vim test21.cpp
+  
+  g++ -DDEBUG -o dd  增加宏定义DEBUG
+  
+  #define DEBUG
+  
+  g++ -DDEBUG -DPI=3 test.cpp -o dd
+
+
+/*字符串*/
+
+      存储ASCII码的信息；
+      memset(dtring, c, n);
+      memset(arr, 0x3f, sizeof(int) * n); //把整形的每个字节都设置成3f
+      //test22.cpp
+      
+      sscanf(str, format, str2)
+      sprint(str, format, str2)
+
+#include <stdio.h>
+#include <stdarg.h>
+
+int print(const char *format, ...) {
+    va_list arg;
+    va_start(arg, format);
+    int i = 0, ret = 0;
+    while(format(i)) {
+        if(format[i] == '%') {
+            ++i;
+            switch (format[i]) {
+                case '%': putchar('%'), ++ret; break;
+                case '%': {
+                    int temp = va_arg(arg, int);
+                    sprintf(s, "%s", temp);
+                }
+            }
+        } else {
+            putchar(format[i]), ++ret;
+        }
+        i++;    
+    }
+}
+
+
+
+
+  /* do {
+
+        ret = sscanf(s, "%s%[^$]s", s1, s);
+        printf("%d %s %s(%d)\n", ret, s, s1, strlen(s1));
+    } while (ret == 2);*/
+    
+    
+     //int b = sprintf(s1, "%x", a)
+     
+     int testBigEnded() {
+        static int temp = 0x01000002;
+        static int ret = (*((char *)&temp) == 0x01)
+        return ret;::
+     
+     }
+     
+     for (int i = 0; i < 4; i++) {
+        unsigned char c = *(p + i);
+        if(c / 16 >= 10) {
+            putchar(c / 16 + 'a' - 10), ++ret;
+        } else {
+            putchar(c / 16 + '0'), ++ret;
+        }
+        if (c % 16 >= 10) {
+            putchar(c % 16 + 'a' - 10), ++ret;
+        } else {
+            putchar(c % 16 + '0'), ++ret;
+        }
+     }
+     
+     
+     
+     int temp = va_arg(arg, int);
+     unsigned int num = 0, num2 = temp;
+     while (num2) {
+        num = (num << 4) | (num2 & 15);
+        num2 >>= 4;
+     }
+     do {
+        if((num & 15) >= 10) {
+            putchar((num & 15) + 'a' - 10), ++ret;
+        } else {
+            putchar((num & 15) + '0'), ++ret;
+        }
+        num >>= 4;
+     } while (num);
+     break;
+     
+     
+     #define MAX(a, b) ({ \     //无BUG宏定义
+
+    __typeof(a) __a = (a); \
+
+    __typeof(b) __b = (b); \
+
+    (__a) > (__b) ? (__a) : (__b); \
+
+})
+
+ 
+     
+     
+    
+    
+

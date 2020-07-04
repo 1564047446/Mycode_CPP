@@ -1,0 +1,22 @@
+指针占/*8*/个字节  所有指针的存储空间都是一样的
+
+int -> 32 位
+
+format : 格式化字符
+
+%p -> 地址
+
+IEEE -> 浮点型表示占据字节
+
+#define INF 0xffffffff
+
+int a= INF, b = INF, c = INF;
+int *pa = (int *)(&a);
+char *pb = (char *)(&b);
+double *pc = (double *)(&c);
+*pa = 1;
+*pb = 1;
+*pc = 1;
+printf("%p %p %x\n", pa, pa + 1, a);
+printf("%p %p %x\n", pb, pb + 1, b);
+printf("%p %p %x\n", pc, pc + 1, c);
