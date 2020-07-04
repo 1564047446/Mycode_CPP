@@ -1,0 +1,72 @@
+
+
+	**单调栈**  求最近最小 最远最大的问题
+	
+int cal(const char *s, int left, int right) {
+	int min_pos = -1, prio = inf, temp_prio = 0;
+	for (int i = left; i < right; i++) {
+		int cur_prio = inf + 1;
+		switch (s[i]) {
+			case '(': temp_prio += 100; break;
+			case ')': temp_prio -= 100; break;
+			case '+': 
+			case '-': cur_prio = temp_prio + 1; break;
+			case '*':
+			case '/': cur_prio = temp_prio + 2; break;
+			
+		}
+		if (cur_prio <= prio) {
+			prio = cur_prio;
+			min_pos = i;
+		}
+	}
+	
+	if (min_pos == -1) {
+		int num = 0;
+		for (int i = left; i <= right; i++) {
+			if (str[i] > '9' || str[i] < '0') continue;
+			num = num * 10 + str[i] - '0'
+		}
+		return num;
+	}
+	
+	int a = calc(str, left, min_por - 1) 
+	int b = calc(str, min_pos + 1, right);
+	switch (str[min_pos]) {
+		case '+': return a + b;
+		....
+	}
+	return 0;
+	
+}
+
+
+>
+
+ 	**树和二叉树**  度为0的节点永远比度为2的节点多一个
+ 					n0 + n1 + n2 = 2 * n2 + n1 + 1;
+ 					------------------------------
+ 					   节点数     |       边数
+ 					   
+ 	**完全二叉树**  左孩子节点编号 2 * i  右孩子节点编号 2 * i + 1
+ 	
+ 	由于孩子节点有顺序   所以可以完全用数组模拟  -> 记录式改计算式
+ 	
+ 	字典树通过改变 变成双数组字典树
+ 	
+ 	**二叉树-广义表** 
+ 	() 空树
+ 	A / A()
+ 	A(B,) / A(B)
+ 	A(B,C)
+ 	A(B(,D),C(E,))
+ 	
+ 	**排序二叉树**   左子树小于 根节点 小于右子树
+ 	
+ 		1
+ 	2		3
+ 4	  5   6   7
+ 
+ 1 2 4 5 3 6 7
+ 4 2 5 1 6 3 7
+ 4 5 2 6 7 3 1
