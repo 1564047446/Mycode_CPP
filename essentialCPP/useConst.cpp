@@ -1,5 +1,14 @@
 #include <iostream>
 
+class Shape
+{
+public:
+    Shape() {}
+private:
+    int _aa;
+    int _bb;
+};
+
 class Circle
 {
 public:
