@@ -15,7 +15,13 @@ const std::vector<int>* getVector(int size) {
     return &arr;
 }
 
+// 类中static的用法
+class Shape
+{
 
+priavte:
+
+};
 int main() {
     
     
