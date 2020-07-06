@@ -79,6 +79,5 @@ int main() {
     a.printArr();
     std::cout << "b" << std::endl;
     b.printArr();
-
     return 0;
 }
