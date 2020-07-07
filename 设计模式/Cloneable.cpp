@@ -1,5 +1,5 @@
 // 基础的原型模式，克隆对象
-// 这种模式会出现深拷贝和浅拷贝的问题，问题解决在Cloneable2.cpp中会解决
+// 这种模式会出现深拷贝和浅拷贝的问题，问题解决在Cloneable2.cpp中会解决rm 
 
 #include <iostream>
 
